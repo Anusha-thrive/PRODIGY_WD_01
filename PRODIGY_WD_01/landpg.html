@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodigy - Landing Page</title>
+    <link rel="stylesheet" href="landpg.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Landing Page</a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#stop">Stop Watch</a></li>
+                <li><a href="#ttt">Tic-Tac-Toe</a></li>
+                <li><a href="#pf">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+      <h1 class="text-center" style="color: white;">Welcome To This User-Friendly Website</h1>
+    </section>
+    
+    <section id="stop">
+      <div class="stopwatch">
+        <h2>STOPWATCH</h2>
+        <div id="display">00:00:00.000</div>
+        <button id="startStopBtn">Start</button>
+        <button id="lapBtn">Lap</button> <br>
+        <button id="resetBtn">Reset</button>
+        <div id="laps"></div>
+      </div>
+      <script src="stop.js"> </script>
+    </section>
+    
+    <section id="ttt">
+      <div class="tic-tac-toe">
+          <h2>Tic-Tac-Toe</h2>
+          <div id="board">
+              <div class="cell" data-index="0"></div>
+              <div class="cell" data-index="1"></div>
+              <div class="cell" data-index="2"></div>
+              <div class="cell" data-index="3"></div>
+              <div class="cell" data-index="4"></div>
+              <div class="cell" data-index="5"></div>
+              <div class="cell" data-index="6"></div>
+              <div class="cell" data-index="7"></div>
+              <div class="cell" data-index="8"></div>
+          </div>
+          <div id="message">Player X's turn</div> 
+          <div>
+              <label for="gameMode">Choose Game Mode:</label>
+              <select name="gameMode" id="gameMode">
+                  <option value="player">Player vs Player</option>
+                  <option value="computer">Player vs Computer</option>
+              </select> 
+          </div> <br>
+          <button id="reset-button">Reset Game</button>
+      </div>
+  <script src="ttt.js"></script>
+  </section>
+
+  <section id="pf">
+    <link rel="stylesheet" href="pf.css">
+  
+      <h1>PORTFOLIO</h1>
+      <h5>Anusha</h5>
+      <p>Web Developer | Designer | Programmer</p>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <img src="me.jpg"> <br>
+        <p>Hello! I am a web developer with experience in building beautiful and functional websites. <br> 
+          I specialize in HTML, CSS and JavaScript. <br>
+          I'm currently a student in Vellore Instiute Of Technonlogy. <br>
+          As a student, while I may not have traditional work experience, I've gained valuable skills through academic projects, internships, and coursework that prepare me to contribute effectively to my work.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2> <br>
+        <div class="project">
+            <h3>Stress Free Students:</h3> <br>
+            <img src="p1.png">
+            <img src="p3.png">
+            <img src="p2.png">
+            <p>This is an exclusive website for students, stress. <br> 
+                It helps in teaching students about stress and methods to handel it. <br> 
+                It also helps in testing the stress level.</p>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: anusha@gmail.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+  </section>
+
+    <section class="icon">
+        <script type="text/javascript">
+            window.addEventListener ("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+    </section>
+</body>
+</html>
